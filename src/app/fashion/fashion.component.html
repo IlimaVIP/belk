@@ -1,0 +1,11 @@
+<div class="main_container">
+  <div class="shop_item" *ngFor="let item of fashion$ && fashion$[0].fashion">
+    <a routerLink="{{item.id}}">
+      <div class="img_container">
+        <img src="{{item.img}}" alt="">
+      </div>
+      <p class="description">{{item.name}}</p>
+    </a>
+    <p class="price">{{item.price | currency}}</p>
+  </div>
+</div>

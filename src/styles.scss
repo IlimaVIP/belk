@@ -1,1 +1,300 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+*, *:before, *:after{
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  width: 100vw;
+  font-family: Lato, sans-serif;
+}
+@media (min-width:1270px) {
+  .navbar {
+    height: 73px;
+    border-color: #fff;
+  }
+  .navbar-nav {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+  .navbar-collapse li {
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  .navbar-collapse li .glyphicon {
+    font-size: 20px;
+  }
+  .navbar-brand {
+    display: none;
+  }
+}
+@media (max-width:1270px) {
+  .navbar-inverse .navbar-toggle .icon-bar {
+     background: #000;
+   }
+  .navbar-inverse .navbar-toggle:focus,
+  .navbar-inverse .navbar-toggle:hover,
+  .navbar-inverse .navbar-toggle:active {
+    background: #fff;
+  }
+  .navbar-collapse li {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  .brand-mobile {
+    display: none!important;
+  }
+}
+
+.navbar {
+  background: #fff;
+  
+  .navbar-collapse li a {
+    color: black;
+  }
+  .navbar-collapse li a:hover,
+  .navbar-collapse li a:focus,
+  .navbar-collapse li a:active {
+    color: black;
+  }
+  .bg_brand {
+    width: 90px;
+    margin-top: -10px;
+  }
+}
+
+
+#home {
+  position: realtive;
+  width: 100%;
+  .container_v {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%;
+      z-index: 1;
+    .video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        
+    }
+    @media (max-width:630px) {
+      display: none;
+    }
+  }
+  .home_content {
+    position: absolute;
+    color: #fff;
+    z-index: 2;
+    left: 50%;
+    transform: translatex(-50%);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: bold;
+    margin-top: -250px;
+    
+    p {
+      font-size: 15px;
+      text-shadow: 0 0 6px rgba(0,0,0,.6);
+    }
+    h2 {
+      margin: 5px auto;
+      text-shadow: 0 0 6px rgba(0,0,0,.6);
+    }
+    
+    @media (max-width:630px) {
+      display: none;
+    }
+  }
+}
+
+.see_more_box {
+  width: 150px;
+  height: 50px;
+  background: #fff;
+  margin: 20px auto;
+  text-align: center;
+  color: black;
+  .see_more, .see_more:hover, .see_more:active {
+    color: black;
+    padding-top: 16px;
+    font-size: 11px;
+    display: block;
+  }
+}
+
+.section {
+  position: relative;
+  z-index: 1;
+  .full_image {
+    width: 100%;
+    position: relative;
+  }
+  .section_content {
+    position: absolute;
+    color: #fff;
+    z-index: 2;
+    left: 50%;
+    transform: translatex(-50%);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: bold;
+    margin-top: -200px;
+    p {
+      font-size: 15px;
+      text-shadow: 0 0 6px rgba(0,0,0,.6);
+      font-weight: bold;
+      
+      @media (max-width:768px) {
+        font-size: 10px;
+      }
+    }
+    h2 {
+      margin: 5px auto;
+      text-shadow: 0 0 6px rgba(0,0,0,.6);
+      font-weight: bold;
+      
+      @media (max-width:768px) {
+        font-size: 15px;
+      }
+    }
+    @media (max-width:768px) {
+      margin-top: -150px;
+    }
+  }
+}
+
+.subscribe {
+  background: #fff;
+  min-height: 300px;
+  width: 70%;
+  margin: 0 auto;
+  
+  
+  .info_news {
+    margin: 80px 20px;
+    width: 25%;
+    flex-basis: auto;
+    .title_label {
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 2px;
+      color: black;
+    }
+    p {
+      color: #5f5f5f;
+    }
+    a, a:hover, a:focus, a:active {
+      color: black;
+      text-decoration: underline;
+    }
+    input {
+      border-radius: 0!important;
+    }
+    @media (max-width:768px) {
+      margin: 40px 20px;
+      width: auto;
+    }
+  }
+  @media (min-width:768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  @media (max-width:768px) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 350px));
+    align-items: center;
+  }
+}
+
+.sec_fixed {
+  position: relative;
+  width: 100%;
+  // height: 855px;
+  height: 500px;
+  background: black fixed;
+  background-size: cover;
+  overflow: hidden;
+  color: #fff;
+  z-index: -2;
+  .footer_page {
+    position: fixed;
+    img {
+      z-index: -1;
+      position: fixed;
+      width: 150px;
+      bottom: 300px;
+      left: 50%;
+      transform: translatex(-50%);
+    }
+    h1 {
+      z-index: -1;
+      position: fixed;
+      // bottom: 600px;
+      bottom: 300px;
+      left: 50%;
+      transform: translatex(-50%);
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 10px;
+      font-weight: bold;
+    }
+    
+  }
+}
+
+// fashion
+
+
+.main_container {
+  width: 80%;
+  margin: 130px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  align-items: center;
+  grid-gap: 2rem;
+  .shop_item {
+    cursor: pointer;
+    width: 300px;
+    margin: 20px auto;
+    a, a:hover, a:focus, a:active {
+      color: black;
+    }
+    .img_container {
+      width: 300px;
+      height: 400px;
+      display: flex;
+      overflow: hidden;
+      img {
+        object-fit: cover;
+        width: 100%;
+        transition: transform 400ms ease-out;
+        -webkit-transition: transform 400ms ease-out;
+      }
+      img:hover {
+        transform: scale(1.15);
+        -webkit-transform: scale(1.15);
+        -ms-transform: scale(1.15);
+      }
+    }
+    .description {
+      margin-top: 15px;
+    }
+  }
+}
+
+
+//https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/rvcnbUk-eiv9j1cxk/raining-diamonds-4k-loop_rglhihuobx_thumbnail-full01.png
