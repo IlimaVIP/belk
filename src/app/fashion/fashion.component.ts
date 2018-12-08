@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class FashionComponent implements OnInit {
 
-  fashion$: Object;
+  fashion$: any;
 
   constructor(private data: DataService) { }
 
