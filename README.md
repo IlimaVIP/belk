@@ -1,6 +1,8 @@
 # Belk
 
-####This project was build with intention of making the design of the website for shopping
+## Get some shopping done!
+
+#### This project was build with intention of making the design of the website for shopping
 
 
 ## Project [Demo](https://ilimavip.github.io/belk/)
