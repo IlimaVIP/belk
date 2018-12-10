@@ -1,3 +1,17 @@
-<p>
-  shop works!
-</p>
+<div class="shopping_details">
+  <div class="shopping_detail">
+    <img src="{{shop$ && shop$[id$].img}}" alt="">
+  </div>
+  <div class="shopping_detail">
+    
+    <h3 class="name"> {{ shop$ && shop$[id$].name }} </h3>
+    <hr class="underline">
+    <p class="description"> {{ shop$ && shop$[id$].description }} </p>
+    <hr>
+    <mark class="pull-right"> Limited edition </mark>
+    <h4 class="price"> {{ shop$ && shop$[id$].price | currency }} </h4>
+    <hr>
+    <p><span>SIZE: </span>Available all sizes</p>
+    <button type="bytton" class="btn add_to_bag"><a href="#">ADD TO BAG</a></button>
+  </div>
+</div>

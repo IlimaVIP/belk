@@ -178,7 +178,7 @@ body {
 .subscribe {
   background: #fff;
   min-height: 300px;
-  width: 70%;
+  width: 75%;
   margin: 0 auto;
   
   
@@ -265,7 +265,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   align-items: center;
-  grid-gap: 2rem;
+  grid-gap: 9rem;
   .shop_item {
     cursor: pointer;
     width: 300px;
@@ -292,9 +292,85 @@ body {
     }
     .description {
       margin-top: 15px;
+      text-transform: uppercase;
     }
   }
 }
 
 
-//https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/rvcnbUk-eiv9j1cxk/raining-diamonds-4k-loop_rglhihuobx_thumbnail-full01.png
+// shop 
+
+.shopping_details {
+  width: 80%;
+  margin: 130px auto;
+  
+  .shopping_detail {
+    margin: 50px auto;
+    width: 400px;
+    height: 450px;
+    overflow: hidden;
+    position:relative;
+    
+    @media (max-width:768px) {
+      width: 100%;
+      height: 450px;
+    }
+    
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      transition: transform 400ms ease-out;
+      -webkit-transition: transform 400ms ease-out;
+    }
+    img:hover {
+      transform: scale(1.15);
+      -webkit-transform: scale(1.15);
+      -ms-transform: scale(1.15);
+    }
+    .add_to_bag {
+      width: 100%;
+      position: absolute;
+      background: #000;
+      height: 60px;
+      display: block;
+      bottom: 0;
+      right: 0;
+      border-radius: 0!important;
+      
+      a, a:hover, a:focus, a:active {
+        color: #fff;
+        letter-spacing: 3px;
+      }
+    }
+    .name, .price, span {
+      font-weight: bold;
+      letter-spacing: .2px;
+      color: #212121;
+      text-transform: uppercase;
+    }
+    mark {
+      background-color: #E0E0E0;
+      font-size: 11px;
+      letter-spacing: 1px;
+      padding: 2.5px 10px;
+      font-weight: 600;
+    }
+    .underline {
+      margin-top: 0;
+      border: 2px solid #212121;
+    }
+    p {
+      color: #5d5d5d;
+    }
+  }
+    
+   
+  @media (min-width:768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+}
+
