@@ -178,7 +178,6 @@ body {
 .subscribe {
   background: #fff;
   min-height: 300px;
-  width: 75%;
   margin: 0 auto;
   
   
@@ -201,6 +200,7 @@ body {
     }
     input {
       border-radius: 0!important;
+      margin-right: 5px;
     }
     @media (max-width:768px) {
       margin: 40px 20px;
@@ -212,11 +212,13 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: stretch;
+    width: 75%;
   }
   @media (max-width:768px) {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 350px));
     align-items: center;
+    width: 85%;
   }
 }
 
@@ -256,6 +258,7 @@ body {
   }
 }
 
+
 // fashion
 
 
@@ -294,6 +297,11 @@ body {
       margin-top: 15px;
       text-transform: uppercase;
     }
+  }
+  @media (max-width:768px) {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
 }
 
